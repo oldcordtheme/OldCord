@@ -318,6 +318,10 @@ div.customizationSection-IGy2fS.previewProfileThemes-ViDDkq
 }
 
 /** Activity buttons*/
+/* spotify progress bar*/
+.bar-1GpknY {
+	background-color: var(--background-primary);
+}
 /* make upgrade button blurple*/
 .button-35nmN9 {
 	background: none;
