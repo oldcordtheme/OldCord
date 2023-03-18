@@ -1,4 +1,5 @@
 # moved to https://github.com/DaMoyai/oldcord
+###### ~~not~~ sorry to xenrelle :)
 
 ---
 
