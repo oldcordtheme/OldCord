@@ -1,29 +1,31 @@
-# moved to https://github.com/DaMoyai/oldcord
-###### ~~not~~ sorry to xenrelle :)
-
+# Moved to https://github.com/DaMoyai/oldcord
 ---
 
-<img src="https://cdn.discordapp.com/attachments/827938615958831134/928963957601996830/oldcord.png" alt="a" style="border-radius: 3px" height="300" >
+# OldCord
+
+A theme for Discord that brings back the classic 2020 UI without removing features.
+
+![Preview](https://cdn.discordapp.com/attachments/1088094000294142033/1088101447729688706/image.png)
+
+###### the folders are not part of the theme
+
+Please note that OldCord does not revert the "mosaic" images. Use the [discord-no-mosaic](https://github.com/Tanza3D/discord-no-mosaic) plugin instead.
+
+Enable "Sync Profile Themes" in Accessibility so profiles won't get bright
 
 ---
-
-a [BetterDiscord](https://betterdiscord.app " ") theme that brings back the 2020 ui, based on [GT-RevertRebrand](https://github.com/Goose-Nest/GT-RevertRebrand)
-
-###### works with nitro themes and their clones
-
-### Note: enable "Sync Profile Themes" in Accessibility
-
-![image](https://cdn.discordapp.com/attachments/1056211378882498641/1064923652174389278/image.png)
 
 # Installation
 
-### BetterDiscord
+### Using BetterDiscord
 
-Download [OldCord.theme.css](https://raw.githubusercontent.com/moyaiu/OldCord/main/OldCord.theme.css " ") (ctrl + s) and move it in the BetterDiscord theme folder (`%appdata%/BetterDiscord/themes`) (`~/.config/BetterDiscord/themes` on linux)
+Download [OldCord.theme.css](https://raw.githubusercontent.com/damoyai/oldcord/main/OldCord.theme.css) (right-click > "Save As") and save it to the BetterDiscord theme folder (windows:`%appdata%/BetterDiscord/themes` linux:`~/.config/BetterDiscord/themes`)
 
-### Alternative
+### Using Custom CSS
 
-Put this at the top of the custom CSS tab:
+1. Go to the Discord settings
+2. Scroll down and open the "Custom CSS" tab
+3. Paste the following code at **the top** of the custom CSS tab:
 
 ```css
 @import url("https://damoyai.github.io/oldcord/src/main.css");
@@ -35,5 +37,3 @@ Put this at the top of the custom CSS tab:
 
 -   [GT-RevertRebrand](https://github.com/Goose-Nest/GT-RevertRebrand) for the original code
 -   [DTM-16](https://github.com/XYZenix/DTM-16) for the switches, old radio bars and some of the profile code
-
-[damoyai]: DaMoyai/oldcord
