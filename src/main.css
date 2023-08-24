@@ -1,11 +1,11 @@
-@import url("https://moyaiu.github.io/OldCord/src/components/vars.css");
-@import url("https://moyaiu.github.io/OldCord/src/components/color.css");
-@import url("https://moyaiu.github.io/OldCord/src/components/imgs.css");
-@import url("https://moyaiu.github.io/OldCord/src/components/other.css");
-@import url("https://moyaiu.github.io/OldCord/src/components/profile.css");
-@import url("https://moyaiu.github.io/OldCord/src/components/roles.css");
-.base-2jDfDU:before{
-	color: #fff;
+@import url("https://milbits.github.io/oldcord/src/components/vars.css");
+@import url("https://milbits.github.io/oldcord/src/components/color.css");
+@import url("https://milbits.github.io/oldcord/src/components/imgs.css");
+@import url("https://milbits.github.io/oldcord/src/components/other.css");
+@import url("https://milbits.github.io/oldcord/src/components/profile.css");
+@import url("https://milbits.github.io/oldcord/src/components/roles.css");
+.base-2jDfDU:has(.addFriend-emTWY1):before{
+	color: ￼#fff;
 	background: var(--brand-experiment-560);
 	content: "You're using an old version of OldCord! Go to github.com/milbits/oldcord to download the latest version";
 	padding: 10px;
