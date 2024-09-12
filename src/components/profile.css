@@ -1,196 +1,396 @@
-.premiumIconWrapper-32h0Ri,
-.bannerOverlayProfile-31VOgt,
-.bannerOverlayPopout-1clJ34,
-.headerTop-3GPUSF > .profileBadges-2pItdR,
-.setIdentityLink-hOFsMl,
-.pencilContainer-11Kuga,
-.profileBadges-31rDHI,
-.bannerSVGWrapper-qc0szY,
-.divider-1tWBgZ,
-#account.menu-1QACrS .profileBody-3QbfPe {
+/*! bottom-left popout */
+/*Code by @kinggamingyt! */
+#account > .scrollerBase_c49869.none_c49869.scroller_d90b3d > div > .colorDefault_d90b3d.labelContainer_d90b3d.item_d90b3d,
+#account > .scrollerBase_c49869.none_c49869.scroller_d90b3d > .separator_d90b3d,
+#status-edit-profile {
 	display: none;
 }
 
-.nameTag-H6kSJ0,
-.nickname-2rimyL {
-	text-align: center;
+:is(#status, #account) > .scrollerBase_c49869.none_c49869.scroller_d90b3d .colorDefault_d90b3d.labelContainer_d90b3d.item_d90b3d:not(:has(.userMenuUsername_e1268c)) {
+	font-size: 14px;
+	min-height: 0px;
+	max-height: 28px;
 }
 
-/* bottom-left popout */
-#account.menu-1QACrS {
-	width: 100% !important;
+.submenu_d90b3d > .scroller_d90b3d.thin_c49869.scrollerBase_c49869:has(.userMenuUsername_e1268c, .status_ad5fac) {
+	padding-left: 0;
+}
+[lang^="en"] .content_d0a252 > .addStatusPrompt_d0a252 {
+	text-indent: -9999px;
+	line-height: 0;
+	display: inline-flex;
+	margin-right: 10px;
+
+	&::after {
+		content: "Set a custom status";
+		text-indent: 0;
+		display: flex;
+		line-height: initial;
+	}
+}
+:is(#status-status-picker)::after {
+	content: "";
+	position: absolute;
+	width: 86%;
+	height: 1px;
+	background-color: var(--profile-body-divider-color);
+	padding: 0 4px;
+	bottom: 0;
+	left: 0;
+	margin-left: 5%;
+	pointer-events: none;
+}
+.accountProfilePopoutWrapper_b2ca13 :is(.banner_d5fdb1,.avatar_f94206,.descriptionClamp_abaf7d,.mask_d5fdb1) {display: none}
+.accountProfilePopoutWrapper_b2ca13 .statusBubbleOuter_d0a252{
+	top: -103px !important;
+	white-space: nowrap;
+	text-align: left !important;
+}
+.accountProfilePopoutWrapper_b2ca13 .visibleContainer_d0a252.biteSize_d0a252 {
+	bottom: 0;
+	left: 106px;
+}
+.accountProfilePopoutWrapper_b2ca13 .singleLineAlign_d0a252 {
+	text-align: left;
+}
+.popover_bba79b {
+	right: 150px;
+	margin-top: -85px;
+	opacity: 1;
+	background: none;
+	pointer-events: unset;
+	box-shadow: none;
+	border-radius: unset;
+	transition: none;
 }
 
-.headerTop-3GPUSF.copiableNameTag-3f6roa {
-	background-color: transparent !important;
+#app-mount .accountProfilePopoutWrapper_b2ca13 .header_b8cc6d {
+	min-height: 0 !important;
+	height: 38px !important;
+	background: var(--background-floating);
+	width: 212px !important;
+	position: fixed;
+	z-index: 4;
+	margin-top: -30px;
 }
-.item-1OdjEX .banner-1YaD3N.popoutBanner-3cqRD9 {
+:is(.accountProfilePopoutWrapper_b2ca13) .statusBubbleOuter_d0a252 .statusBubble_d0a252:hover {
+	background: var(--blurple);
+	width: 180px;
+	border-radius: 2px;
+	block-size: 12px;
+}
+.content_d0a252 {
+	margin-top: -3px;
+}
+:is(.accountProfilePopoutWrapper_b2ca13) .statusBubbleWithTextPadding_d0a252 {
+	margin-right: 85px;
+}
+.accountProfilePopoutWrapper_b2ca13 {
+	left: 0px;
+	bottom: 0px;
+	top: 3px;
+	margin-left: 3px;
+	overflow: hidden;
+
+	& .body_ad5fac {
+		padding: 0px;
+		gap: 0px;
+	}
+	& .username_d4e7c2 {
+		padding: 0px 8px;
+	}
+	& .menus_ad5fac {
+		gap: 0px !important;
+		background: var(--background-floating);
+		padding-bottom: 2px;
+	}
+	& .menu_ad5fac {
+		background-color: transparent;
+		background: var(--background-floating);
+	}
+	& .menus_ad5fac > .menu_ad5fac > .scroller_d90b3d {
+		padding: 0px !important;
+	}
+	& .menu_ad5fac:last-of-type [role="menu"]:first-of-type::before {
+		content: "";
+		display: block;
+		margin: 7px 4px 8px 4px;
+		border-bottom: 1px solid var(--profile-body-divider-color);
+	}
+	& .userPopoutOuter_c69a7b.userProfileOuter_c69a7b,
+	#status > .scrollerBase_c49869.none_c49869.scroller_d90b3d {
+		width: 220px;
+		background: var(--background-floating);
+	}
+	& .userPopoutInner_c69a7b {
+		max-height: 100%;
+		width: 220px;
+		gap: 0px;
+		padding-bottom: 0px;
+		background: var(--background-floating);
+	}
+	& .container_c32acf.username_ad5fac {
+		display: none;
+	}
+	& .custom-theme-background .menu_d90b3d {
+	    border: 0px;
+	}
+	& .statusBubbleShape_d0a252::hover {
+		background-color: var(--blurple); /* this doesn't currently work and i'm unsure of why */
+	}
+}
+
+.statusBubbleOuter_d0a252 {
+	box-shadow: none;
+	background: none !important;
+}
+.title_b97bdb.text-sm\/normal_dc00ef {
+	font-weight: 400;
+}
+
+/* Switch account icon (WIP) */
+#account-switch-account
+	> .iconContainer_d90b3d.iconContainerLeft_d90b3d
+	> .icon_d90b3d
+	> path[d^="M18.46 20.9a12.65 12.65 0 0 1-1.46.9 10.95 10.95 0 0 1-10 0 11 11 0 1 1 11.46-.9Zm-1.65-1.3a8.96 8.96 0 0 1-9.62 0l.23-2.26c.02-.25-.27-.36-.41-.15-.29.45-.6 1.01-.88 1.63A9.04 9.04 0 0 1 4.2 16.5a9 9 0 0 1 15.6 0 9.04 9.04 0 0 1-1.93 2.32c-.27-.62-.59-1.18-.88-1.63-.14-.21-.43-.1-.4.15l.22 2.27ZM12 11a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Z"] {
+	d: path(
+		"M9.5,0H2.72c-.1,0-.2.03-.28.08-.08.05-.15.13-.18.22-.04.09-.05.19-.03.29.02.1.07.19.14.26l1.27,1.27c.19.19.29.44.29.71s-.11.52-.29.71l-1.41,1.41c-.56.56-.88,1.33-.88,2.12s.32,1.56.88,2.12c.19.19.44.29.71.29s.52-.11.71-.29l2.12-2.12c.38-.38.88-.59,1.41-.59s1.04.21,1.41.59l.56.56c.07.07.16.12.26.14.1.02.2,0,.29-.03.09-.04.17-.1.22-.18.05-.08.08-.18.08-.28V.5c0-.13-.05-.26-.15-.35-.09-.09-.22-.15-.35-.15ZM.5,18h6.78c.1,0,.2-.03.28-.08.08-.06.15-.13.18-.22.04-.09.05-.19.03-.29-.02-.1-.07-.19-.14-.26l-1.27-1.27c-.19-.19-.29-.44-.29-.71s.11-.52.29-.71l1.41-1.41c.56-.56.88-1.33.88-2.12s-.32-1.56-.88-2.12c-.19-.19-.44-.29-.71-.29s-.52.11-.71.29l-2.12,2.12c-.38.38-.88.59-1.41.59s-1.04-.21-1.41-.59l-.56-.56c-.07-.07-.16-.12-.26-.14-.1-.02-.2,0-.29.03-.09.04-.17.1-.22.18-.05.08-.08.18-.08.28v6.78c0,.13.05.26.15.35.09.09.22.15.35.15Z"
+	) !important;
+	transform: scale(1.3);
+}
+
+/*! Revert activity profile*/
+/** Variables*/
+
+.userPopoutOuter_c69a7b:has(.activity_b8cc6d) {
+	--play-tertiary: rgba(255, 255, 255, 0.6);
+	--play-secondary-2: rgba(255, 255, 255, 0.9);
+	--play-secondary: rgba(255, 255, 255, 0.8);
+	--play-primary: #fff;
+	--play: var(--brand-experiment);
+	--play-dark: var(--brand-experiment-530);
+}
+/*Change color depending on activity type*/
+.userPopoutOuter_c69a7b:not(:has(.vc-user-connection)) {
+	/* Listening to Spotify*/
+	&:has(.platformIcon_ae1fa2[style*="/assets/3912b83ecf89f78097ab.svg"]) {
+		--play: var(--spotify);
+		--play-dark: var(--spotify-dark);
+	}
+
+	/* Live on Twitch*/
+	&:has([mask="url(#svg-mask-status-streaming)"]) {
+		--play: var(--twitch);
+		--play-dark: var(--twitch-dark);
+	}
+
+	/* Watching Crunchyroll*/
+	&:has([alt="Crunchyroll"]) {
+		--play: var(--crunchyroll);
+		--play-dark: var(--crunchyroll-dark);
+	}
+
+	/* Watching Watch Together*/
+	&:has([src*="/app-assets/880218394199220334/881026601624694814.png"]) {
+		--play: var(--youtube);
+		--play-dark: var(--youtube-dark);
+	}
+
+	/* Playing on XBOX*/
+	&:has([style*="/assets/9109430b0f2514a0c674.png"]) {
+		--play: var(--xbox);
+		--play-dark: var(--xbox-dark);
+	}
+
+	/* Playing on PlayStation*/
+	&:has([style*="/assets/8fca7fcefaac64787658.svg"]) {
+		--play: var(--playstation2);
+		--play-dark: var(--playstation-dark);
+	}
+}
+
+.platformIcon_ae1fa2 {
+	display: none;
+}
+.headerText_ae1fa2:not(:has(.platformIcon_ae1fa2)){
+	[lang="de"] &:after{
+		content: "ein spiel"
+	}
+		[lang^="en"] &:after{
+		content: "a game"
+	}
+}
+
+[class^="userProfileModalInner"] .headerText_ae1fa2:not(.platformIcon_ae1fa2){ /* specifically for full profiles */
+	text-transform: uppercase;
+	color: var(--header-secondary) !important;
+	font-weight: 600;
+}
+
+.biteSizeInnerThemed_c69a7b .headerText_ae1fa2 {
+	text-transform: uppercase;
+	font-weight: 700
+}
+/* make activity the first section*/
+.activity_b8cc6d {
+	order: -1;
+	padding: 0;
+}
+.scroller_d2b491 {
+	display: flex;
+	flex-direction: column;
+	padding: 0 !important;
+}
+.scroller_d2b491::-webkit-scrollbar {
+	width: 0;
+}
+
+/*make status icon white*/
+.userProfileInner_c69a7b:has(.activity_b8cc6d) rect:not(path ~ rect) {
+	fill: #fff !important;
+}
+
+/* change activity bg color and padding*/
+.activity_b8cc6d {
+	background-color: var(--play-dark) !important;
+	padding: 12px;
+	border-radius: 0;
+}
+/*change some other colors for the activity section*/
+
+
+
+.activity_b8cc6d .heading-sm\/semibold_dc00ef /*game title*/ {
+	color: var(--play-secondary-2) !important;
+}
+.activity_b8cc6d .text-xs\/normal_dc00ef /*details*/ {
+	font-size: 14px;
+	color: var(--play-secondary) !important;
+}
+
+.activity_b8cc6d .timestamp_c5d1c1, .timestamp_c5d1c1.bold_c5d1c1  {
+	font-size: 14px;
+	font-weight: 400;
+	line-height: normal;
+	font-family: var(--font-primary) !important;
+	font-variant-numeric: normal;
+	font-feature-settings: normal;
+	color: #f6fbf9 !important /*not accurate to original but tbh it looks better? maybe??*/;
+	[lang^="en"] &:after{
+		content: " elapsed"}
+	[lang="de"] &:after{
+		content: " verstrichen"}
+}
+/*icons*/
+
+/*timestamp icon*/.activity_b8cc6d svg:has( + .timestamp_c5d1c1),.badgeContainer_d60c6d svg:has( + .bold_c5d1c1){
+	display: none
+}
+.badgeContainer_d60c6d path{
+	fill: white
+}
+
+.nameNormal_c1d9fd,
+.contentImagesUserPopoutV2_c1d9fd .textRow_c1d9fd {
+	color: #fff !important;
+}
+
+/*activity buttons*/
+.activity_b8cc6d .button_f9d37d {
+	background: transparent !important;
+	color: var(--play-primary);
+	border: 1px solid var(--play-primary);
+	transition: 0.17s ease;
+	opacity: 1 !important;
+	width: 100%;
+}
+.activity_b8cc6d :is(.colorBrand_dd4f85,.button_f9d37d):hover {
 	background: transparent !important;
 }
 
-.userProfileModalOverlayBackground-8p3-eU {
-	margin: 0;
+.activity_b8cc6d .button_f9d37d:not(:disabled):active {
+	border-color: var(--play-primary);
+	background: #ffffff1a !important;
 }
 
-.overlayBackground-1KgwVi {
-	background-color: var(--background-secondary);
+.activity_b8cc6d .button_f9d37d:disabled {
+	border-color: #ffffff5d;
+	background: transparent;
+	color: #ffffff5d;
 }
 
-.banner-2boKnS,
-.userPopoutInner-1hXSeY {
-	background-color: none !important;
+/* since the padding of the profile is gone, add padding to every section*/
+.descriptionClamp_abaf7d,
+.root_e6f2d0 {
+	padding-left: 12px;
 }
-.avatarWrapper-3y0KZ1 {
-	left: 35% !important;
-	position: relative !important;
-	padding-bottom: 16px;
-	width: 0px;
+.body_b8cc6d {
+	padding: 0;
+	gap: 0;
+	overflow: unset !important;
 }
-.usernameSection-2d814A,
-.customStatusSection-2TRu5f {
-	background-color: var(--background-tertiary);
+.biteSizeInnerThemed_c69a7b {
+	gap: 0;
 }
-
-.userProfileInnerThemedNonPremium-1gT-zY {
-	margin: 0;
+.descriptionClamp_abaf7d {
+	padding: 12px;
 }
 
-.userProfileOuterThemed-3EfHmv,
-.userProfileInnerThemedWithBanner-2624Yx {
-	background: var(--background-tertiary);
-	box-shadow: none;
-	padding: 0 !important;
-}
-.userProfileOuter-1K_BYU {
-	border-radius: 3px;
-}
-.userProfileInner-3F03PX {
-	border-radius: 3px 3px 0 0;
-}
-
-div.topSection-1Khgkv > header > svg.bannerSVGWrapper-qc0szY {
-	display: none;
-}
-.usernameSection-2d814A {
-	padding-top: 100px;
-	padding-bottom: 10px;
-}
-.userTagDiscriminatorNoNickname-2HLaIE.discrimBase-KriZSj {
+/*note for feature-stripped customization screen*/
+.preview_bad983:before {
+	content: "[ Disable OldCord for an accurate preview ]";
+	color: var(--blurple);
+	font-size: 14px;
 	font-weight: 500;
 }
-.userPopoutOverlayBackground-dKOOda {
-	margin: 0;
-	width: 250px;
-	border-radius: 5px;
-	overflow: hidden;
-	max-height: calc(100vh - 20px);
+[lang="DE"] .preview_bad983:before {
+	content: "[ Deaktiviere OldCord für eine akkurate Vorschau ]";
 }
 
-/* removes dark circle behind status icon for profiles with custom colours */
-div.clickable-3iBWTO.avatarWrapperNormal-1tQ3Je.avatarWrapper-3y0KZ1.avatarPositionPremiumBanner-2nq2Fy > div > div > svg > circle,
-div.clickable-3iBWTO.avatarWrapperNormal-1tQ3Je.avatarWrapper-3y0KZ1.avatarPositionPremiumBanner-2nq2Fy > div > div > svg > rect:nth-child(2),
-/* do the same but for profiles with premium and no colours or something idfk */
-div.clickable-3iBWTO.avatarWrapperNormal-1tQ3Je.avatarWrapper-3y0KZ1.avatarPositionPremiumNoBanner-nWzERs > div > div > svg > circle,
-div.clickable-3iBWTO.avatarWrapperNormal-1tQ3Je.avatarWrapper-3y0KZ1.avatarPositionPremiumNoBanner-nWzERs > div > div > svg > rect:nth-child(2),
-/* and the same for full profile dialogs */
-div.topSection-1Khgkv > header > div > div:nth-child(1) > div > svg > circle,
-div.topSection-1Khgkv > header > div > div:nth-child(1) > div > svg > rect:nth-child(2) {
-	visibility: hidden;
+.customizationSection_b3a5c2 .container_c32acf {
+	padding-top: 105px;
+	margin-top: -150px;
 }
 
-/* tweaks for full profile dialog */
-div.topSection-1Khgkv > header > div > div:nth-child(1) > div {
-	transform: scale(0.666);
+.customizationSection_b3a5c2 .wrapper_c51b4e {
+	bottom: 45px;
+}
+
+.customizationSection_b3a5c2 .overlayIcon_f18fcb {
+	bottom: 75px;
+}
+
+.customizationSection_b3a5c2 .avatar_f18fcb {
+	left: 85px;
+}
+
+.customizationSection_b3a5c2 .userTagUsername_c32acf {
+	margin-left: 75px;
+}
+
+.customizationSection_b3a5c2 .descriptionClamp_abaf7d {
+	max-height: unset;
+}
+
+.customizationSection_b3a5c2 .footer_b8cc6d::before {
+	content: "";
+	width: 100%;
+	height: 1px;
+	right: 0.5px;
+	margin-top: -15px;
 	position: absolute;
-	top: -20px;
-	left: 0px;
-}
-.topSection-1Khgkv {
-	padding-top: 20px;
-	margin-bottom: 10px;
+	background-color: var(--background-tertiary) !important;
 }
 
-.nameTag-2ysfG3.nameTag-H6kSJ0 {
-	transform: scale(0.9);
-	position: relative;
-	top: 6px;
-	left: 75px;
+/*! normal profile popout*/
+/*Banners*/
+.mask_d5fdb1 {
+	display: none;
 }
-
-.nameTag-2ysfG3.nameTag-H6kSJ0 > .discriminator-3_S3CG {
-	font-size: medium;
-	font-weight: 400;
-	position: relative;
-	top: 2px;
-}
-
-.body-_QAKrE > .container-1U-qVy > div:nth-child(2) > .text-sm-normal-AEQz4v.customStatusText-3ca2B1 {
-	height: 0px;
-	position: relative;
-	top: 32px;
-	left: 10px;
-	margin-right: 10px;
-}
-
-.headerTop-212g15 > .badgeList-2pMvZX {
-	transform-origin: top left;
-	transform: scale(1.25);
-	position: relative;
-	right: 53px;
-	top: 33px;
-}
-
-.headerTop-212g15 > .relationshipButtons-pZ_UWl {
-	margin-top: 9px;
-}
-.body-_QAKrE > .container-1U-qVy {
-	padding-bottom: 50px;
-}
-
-.tabBarItem-3VvT2z.item-3XjbnG {
-	height: 30px;
-}
-
-/* note: divider only appears on your own profile dialog */
-.body-_QAKrE > .divider-1NpGam {
-	border-top: 9px solid var(--background-tertiary);
-	margin: 0 0 0;
-}
-/* full profile dialog tweaks end here */
-
-.userProfileInnerThemedPremiumWithoutBanner-1yMS1H {
-	background: transparent;
-}
-
-.customStatusSection-2TRu5f {
-	max-height: calc(100vh - 20px);
-	padding-top: 0px;
-	padding-bottom: 10px;
-}
-
-.userPopoutOuter-3AVBmJ {
-	width: 250px;
-	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px var(--deprecated-card-bg) !important;
-	border-radius: px;
-}
-
-.section-3FmfOT .eyebrow-1Shfyi,
-.section-3FmfOT .headerTextNormal-Z8we9g,
-.userInfoSectionHeader-48g5Qj {
-	color: var(--header-secondary) !important;
-	padding-left: 0px !important;
-}
-
-.avatarPositionPremiumBanner-2nq2Fy {
-	top: 15px;
-}
-
-.badgeList-2pMvZX {
-	background-color: transparent;
-}
-
-/* fix profile still having messed up colours when custom colours were enabled */
-div {
+/*profile stuff*/
+.userPopoutInner_c69a7b,
+.userProfileModalInner_c69a7b,
+.userProfileOuterThemed_c69a7b {
 	--profile-gradient-primary-color: var(--background-secondary-alt);
 	--profile-gradient-secondary-color: var(--background-secondary-alt);
 	--profile-gradient-overlay-color: transparent;
@@ -203,139 +403,799 @@ div {
 	--profile-role-pill-background-color: var(--background-secondary-alt);
 	--profile-role-pill-border-color: var(--interactive-normal);
 }
-
-.customStatus-3Bvsdb {
-	justify-content: center;
-	display: flex;
-}
-.customStatusText-2bcbbm {
-	text-align: center;
-	color: var(--header-secondary);
-}
-
-header .bannerSVGWrapper-qc0szY {
-	display: grid;
-}
-
-.container-1U-qVy,
-.topSection-1Khgkv,
-.tabBarContainer-2UG0vy {
-	background-color: var(--background-tertiary) !important;
-}
-
-.userProfileInnerThemedNonPremium-1gT-zY,
-.tabBarContainer-2UG0vy {
-	background: var(--background-tertiary) !important;
-}
-.tabBarContainer-2UG0vy {
-	padding: 21px;
-	padding-right: 10px;
-	padding-bottom: 0;
+.userPopoutOuter_c69a7b,
+.userPopoutOverlayBackground_c69a7b {
 	margin: 0;
+	width: 250px;
+	border-radius: 0px;
+	overflow: hidden;
+	max-height: calc(100vh - 20px);
+}
+.userPopoutOuter_c69a7b {
+	box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px var(--deprecated-card-bg) !important;
+	border-radius: 3px;
+	padding: 0 !important;
 }
 
-.headerNormal-3Zn_yu {
-	background: #000 !important;
-	visibility: hidden !important;
+.biteSizeInnerThemed_c69a7b {
+	background: var(--background-secondary) !important;
 }
-.headerWrapper-3iTlIT {
-	background: var(--background-tertiary);
-	max-height: 40px !important;
-}
-
-.avatarPositionPremium-1zPBq9,
-.avatarPositionPremiumNoBanner-nWzERs {
-	top: 15px !important;
+.header_b8cc6d {
+	background: var(--play, var(--background-tertiary));
+	box-shadow: none;
+	padding: 0 !important;
+	display: flex;
+	min-height: 100px !important;
 }
 
-.userInfoBody-1zgAd0 {
-	padding: 0px;
+.userProfileInner_c69a7b {
+	border-radius: 0px;
+}
+/*remove and move some of the button*/
+.biteSize_cb78f1 div:nth-child(2) {
+	display: none;
 }
 
-.userPopoutInner-1hXSeY:before {
-	height: 0;
+/*pfp (duh)*/
+.avatar_f94206 {
+	left: 34% !important;
+	position: relative !important;
+	padding-bottom: 16px;
+	top: 13px !important;
 	width: 0;
 }
 
-.avatarHoverTarget-l77PhT .wrapper-1VLyxH {
-	height: 100px !important;
+/* restores "View Profile" text when hovering over a pfp on profile popouts */
+.overlay_f94206::before {
+	position: absolute;
+	z-index: 1;
 }
 
-.usernameSection-2d814A {
-	padding-top: 10px;
+[lang^="en"] .clickable_f94206:hover .overlay_f94206::before {
+	content: "VIEW PROFILE";
+	opacity: 1;
+	font-size: 10px;
+	text-align: center;
+	color: white;
+	top: 39px;
+	left: 7px;
+	font-weight: bold;
+}
+[lang="de"] .clickable_f94206:hover .overlay_f94206::before {
+	content: "PROFIL ANSEHEN";
+	opacity: 1;
+	font-size: 10px;
+	text-align: center;
+	color: white;
+	top: 30px;
+	left: 5px;
+	font-weight: bold;
 }
 
-/* following is for the profiles in settings page, its messy but it works lmao */
-.accountProfileCard-lbN7n- > .userInfo-regn9W {
+/* removes dark circle behind status icon for profiles with custom colours */
+.avatarWrapper_f89da9:is(.avatarPositionPremiumBanner_f89da9,.avatarPositionPremiumNoBanner-nWzERs) > :is(circle,rect:nth-child(2)),
+.avatarHoverTarget_f89da9 > circle,
+/*for modal*/
+.topSection_b9fccc :is(circle,rect:nth-child(2)) {
+	visibility: hidden;
+}
+
+
+
+/*username*/
+
+.container_c32acf {
+	background: var(--play, var(--background-tertiary));
+	order: -1;
+	padding-bottom: 10px;
+}
+.fullSizeOuter_c69a7b .container_c32acf:not(:has(.container_b64375)) /*more padding for profiles without badges*/{
+	padding-bottom: 40px;
+
+}
+.usernameRow_c32acf {
+	text-align: center;
+	color: var(--interactive-active);
+	display: unset;
+}
+.nickname_c32acf {
+	font-size: 16px;
+	line-height: 20px;
+	font-weight: 600;
+}
+.tags_c32acf,
+.info_e86508:not(.alignPomelo_f3939d),
+.userTag_c32acf:not(.fullSize_c32acf .pronounsText_c32acf) /*bot usernames*/{
+	display: unset;
+	text-align: center;
+}
+.dotSpacer_c32acf {
+	display: none;
+}
+.userTagUsername_c32acf {
+	color: var(--play-secondary, var(--text-secondary));
+	&:before {
+		content: "@";
+	}
+}
+
+.pronounsText_c32acf {
+	color: var(--play-tertiary, var(--text-muted)) !important;
+}
+/*bot tag*/
+.userPopoutOuter_c69a7b:has(.activity_b8cc6d) .botTagRegular_a9e77f {
+	background-color: var(--white-500);
+	color: var(--blurple);
+}
+
+/** Custom status*/
+.statusBubbleOuter_d0a252 {
+	position: relative;
+	right: 106px;
+	top: 25px;
+	min-width: 250px;
+	box-shadow: none;
+	background: none !important;
+	text-align: center;
+}
+
+:has(.pronouns_c32acf) .statusBubbleOuter_d0a252 {
+	top: 40px;
+}
+:has(.visibleContainer_d0a252):not(:has(.singleLineAlign_d0a252)) .container_c32acf {
+	padding-bottom: 50px;
+}
+:has(.statusBubble_d0a252) .container_c32acf {
+	padding-bottom: 35px;
+}
+
+/*modal profile*/
+/*dont make profiles as gigantic as kinggamingyt (im super hilariopus i know)*/
+.fullSizeOuter_c69a7b{
+	height: fit-content;
+	min-height: 450px;
+	max-height: 700px
+}
+
+.headerInner_b9fccc .statusBubbleOuter_d0a252 {
+	top: 100px;
+	max-width: 500px;
+	right: 160px;
+	min-width: 0;
+}
+
+.statusBubbleOuter_d0a252 .defaultColor_a595eb {
+	color: var(--play-secondary, var(--interactive-normal));
+}
+
+.statusBubbleOuter_d0a252,
+.statusBubble_d0a252 {
+	border: none !important;
+	background: none;
+}
+.statusBubbleOuter_d0a252:before,
+.statusBubbleOuter_d0a252:after {
+	display: none;
+}
+
+/*note button*/
+.nicknameIcons_c32acf {
+	& [aria-label]:after {
+		content: attr(aria-label);
+		min-width: 230px;
+		text-align: left;
+		margin-left: 240px;
+		margin-top: auto;
+		max-height: 38px;
+	}
+	top: 100%;
+	position: absolute;
+	display: flex !important;
+	padding-top: 15px !important;
+	& .button_f9d37d {
+		opacity: 1;
+	}
+	& .button_f9d37d:before {
+		content: "NOTE";
+		padding-bottom: 30px;
+		left: 70%;
+		position: absolute;
+		color: var(--header-secondary);
+		font-weight: 800;
+		font-family: var(--font-display);
+		font-size: 12px;
+	}
+	[lang="de"] & .button_f9d37d:before {
+		content: "NOTIZ";
+	}
+	& .buttonInner_f9d37d {
+		display: none;
+	}
+}
+.footer_b8cc6d {
+	margin-top: 65px;
+}
+/*:is(#popout_470,#popout_328) + .layer_cd0de5 {
+	display: none;
+}*/
+
+/*remove badges*/
+.biteSizeInnerThemed_c69a7b .container_b64375 {
+	display: none;
+}
+
+.mutuals_fc9b46 {
+	margin-left: 12px;
+	margin-top: 5px;
+}
+
+/*DM text area*/
+/*WIP: fix it*/
+.footer_b8cc6d:has(.channelTextArea_d0696b) {
+	border-top: 1px solid rgba(32, 34, 37, 0.3);
+}
+.footer_b8cc6d .themedBackground_d0696b {
+	background: var(--background-primary) !important;
+	border: solid 1px var(--background-tertiary) !important;
+	margin-top: 12px;
+}
+/** Bio*/
+
+.descriptionClamp_abaf7d .text-sm\/normal_dc00ef {
+	color: var(--text-normal) !important;
+}
+/* add a scrollbar to user bio*/
+.viewFullBio_abaf7d {
+	display: none;
+}
+.descriptionClamp_abaf7d {
+	-webkit-line-clamp: 190 !important;
+	max-height: 112px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.descriptionClamp_abaf7d::-webkit-scrollbar-thumb {
+	background: transparent;
+	border-radius: 99px;
+}
+.descriptionClamp_abaf7d::-webkit-scrollbar {
+	width: 4px;
+}
+.descriptionClamp_abaf7d:hover::-webkit-scrollbar-track {
+	background: 0 0;
+	border-radius: 10px;
+}
+.descriptionClamp_abaf7d:hover::-webkit-scrollbar-thumb {
+	background: var(--bg-overlay-6, var(--background-tertiary));
+	border-radius: 999px;
+}
+/*Add "about me"*/
+.descriptionClamp_abaf7d:before {
+	content: "ABOUT ME";
+	font-size: 12px;
+	color: var(--header-secondary);
+	font-weight: 800;
+	font-family: var(--font-display);
+}
+[lang="DE"] .descriptionClamp_abaf7d:before {
+	content: "ÜBER MICH";
+}
+
+.scroller_d2b491::-webkit-scrollbar-thumb,
+.infoScroller_a24910::-webkit-scrollbar-thumb {
+	background: var(--background-tertiary);
+	border: 2px solid var(--background-secondary);
+}
+
+.lastSection_d7a21f + div h2 {
+	padding-left: 12px;
+	color: var(--header-secondary) !important;
+}
+
+/** Roles */
+.root_e6f2d0:before {
+	content: "ROLES";
+	font-size: 12px;
+	color: var(--header-secondary);
+	font-weight: 800;
+	font-family: var(--font-display);
+	margin-right: 200px;
+	margin-bottom: 4px;
+}
+[lang="DE"] .root_e6f2d0:before {
+	content: "ROLLEN";
+}
+
+.root_e6f2d0 {
+	position: relative;
+	margin-bottom: 22px;
+	margin-top: 12px;
+}
+.role_f9575e {
+	background-color: transparent;
+}
+
+.addButtonIcon_e4010c {
+	width: 10px;
+	height: 10px;
+}
+
+.theme-dark .actionButton_e4010c {
+	border-color: var(--background-accent);
+	color: #b9bbbe;
+	background: 0 0;
+}
+
+.role_f9575e {
+	transform: translate(0);
+	border: 0;
+	border-radius: 4200px;
+}
+.role_f9575e .roleRemoveIcon_f9575e {
+	margin: 0;
+	left: 1px;
+	transform: translate(50%, -50%);
+}
+.role_f9575e .roleRemoveButton_f9575e {
+	position: static;
+}
+.roleCircle_a26d7b {
+	margin: 0 4px 0px 1px !important;
+}
+.role_f9575e > :first-child {
+	margin: 0;
+}
+/* Add a colored border around the role */
+.role_f9575e .roleRemoveButton_f9575e :is(.roleCircle_a26d7b,.roleFlowerStar_f9575e/*linked roles*/):before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	background: inherit;
+	border-radius: 50px;
+	border: 0.65px solid transparent;
+	-webkit-mask: linear-gradient(#000, #000) padding-box, linear-gradient(#000, #000);
+	-webkit-mask-composite: xor;
+	opacity: 0.6;
+	content: "";
+	z-index: -1;
+}
+
+/* border around addrole button*/
+:is(.root_e6f2d0) .button_dd4f85,
+.button_edead5 {
+	border: 1px solid var(--interactive-muted);
+	background: none;
+	border-radius: 999%;
+}
+
+.messageInputContainer_f2c0a8 {
+	border: none;
+}
+
+/* Re-add "Right click user for more actions" footnote on popouts */
+[lang^="en"] .footer_b8cc6d::after {
+	content: "Right click user for more actions";
+	font-size: 12px;
+	text-align: center;
+	margin-top: 10px;
+	color: var(--interactive-normal);
+}
+
+/** full profile modal */
+.custom-profile-theme .fullSizeOverlayBackground_c69a7b {
+	background: var(--background-primary) !important;
+	border: none !important;
+}
+.custom-profile-theme .fullSizeInnerThemed_c69a7b {
+	background: var(--background-tertiary);
+}
+.fullSizeOverlayBackground_c69a7b {
+	background: var(--background-primary) !important;
+	border-radius: 0px;
+	border: none;
+}
+.container_ecc04c {
+	background: var(--background-primary);
+	border-radius: 0px;
+}
+[class^="userProfileModalInner"] .clickable_d5cb59 {
+	position: fixed;
+	left: 430px;
+	top: 90px;
+}
+/*clan tag*/
+.chipletContainerInner_d5cb59, .text_d5cb59 {
+	font-weight: 600;
+	pointer-events: none;
+	border-radius: 3px;
+	height: 16px;
+}
+.chipletContainerInner_d5cb59 {
+	border: 1px solid var(--background-modifier-accent);
+    background: transparent;
+}
+.unselectable_d5cb59 {
+	color: var(--channels-default);
+}
+
+.userProfileModalOverlayBackground_c69a7b,
+.body_b9fccc {
+	margin: 0;
+}
+.headerInner_b9fccc {
+	max-height: 0px;
+	padding: 0 !important;
+	z-index: 2;
+	background: var(--background-tertiary);
+}
+.userProfileOuter_c69a7b {
+	padding: 0 !important;
+}
+.fullSizeInnerThemed_c69a7b {
+	background: var(--background-tertiary);
+}
+
+/*re-position "unable to load" icon*/
+.warningCircleIcon-1YXIHu {
+	transform: translateX(-45px);
+	margin-top: 46px;
+}
+
+.headerInner_b9fccc .avatar_f94206 {
+	transform: scale(0.666);
+	position: absolute !important;
+	top: 1px !important;
+	left: 30px !important;
+}
+/*.fullSizeInnerThemed_c69a7b{
+	padding-top: 20px;
+	margin-bottom: 10px;
+}*/
+
+/*Username Position*/
+.nickname_c32acf.fullSize_c32acf {
+	transform: translateX(125px);
+	width: fit-content;
+}
+.fullSize_c32acf .userTagUsername_c32acf {
+	transform: scale(0.9);
+	position: relative;
+	top: px;
+	left: 125px;
+}
+
+/*Display name tweaks*/
+.nickname_c32acf.fullSize_c32acf {
+	color: var(--interactive-active);
+	position: relative;
+}
+
+.body_b9fccc > .container_afed89 > div:nth-child(2) > .text-sm-normal__95a78.customStatusText_afed89 {
+	height: 0px;
+	position: relative;
+	top: 12px;
+	left: 10px;
+	margin-right: 10px;
+}
+.body_b9fccc {
+	gap: 0;
+}
+
+.container_b64375 {
+	transform-origin: top left;
+	transform: scale(1.255);
+	position: relative;
+	right: -119px;
+	background: none;
+	border: none;
+}
+.custom-profile-theme .container_b64375 {
+	background: none;
+}
+:has(.pronouns_afed89) .container_b64375 {
+	top: 55px;
+}
+/*focking WOKE LIBERAL pronouns*/
+.fullSize_c32acf .pronounsText_c32acf {
+	left: 125px;
+	position: relative;
+	font-weight: 500;
+	max-width: fit-content;
+}
+:is([class*="animator"], [class*="root"]) .badgeList_ec3b75 {
+	background-color: transparent;
+}
+/*call n dm btn*/
+.headerInner_b9fccc .headerButtons_b9fccc {
+	display: unset;
+	position: relative;
+	bottom: -33px;
+	left: 420px;
+}
+.tabBarItem_ecc04c.item_a0 {
+	height: 37px;
+	padding-top: 2px;
+}
+[aria-label="Add Friend"], [class^="userProfileModalInner"] .colorPrimary_dd4f85.icon_f9d37d {
+	right: 10px;
+}
+
+/*note: divider only appears on your own profile dialog */
+.body_b9fccc > .divider_b9fccc {
+	border-top: 9px solid var(--background-tertiary);
+	margin: 0 0 0;
+}
+
+.tabBar_ecc04c {
+	padding: 20px;
+	padding-right: 10px;
+	padding-bottom: 0;
+	margin: 0;
+	background: var(--background-tertiary);
+	border-radius: 0;
+}
+.tabBar_ecc04c:before {
+	content: "";
+	width: 100%;
+	height: 1px;
+	right: 0.5px;
+	margin-top: -15px;
+	position: absolute;
+	background-color: var(--background-primary) !important;
+}
+.friendRequestBanner_b9fccc {
+	background: var(--background-tertiary);
+	border-radius: 0;
+}
+.sizeSmall_dd4f85.colorBrand_dd4f85.lookFilled_dd4f85.button_ecc1b2 {
+	background: var(--green);
+	&:hover{
+		background: var(--green-active) !important;
+	}
+}
+
+.sizeSmall_dd4f85.lookFilled_dd4f85.button_dd4f85.button_ecc1b2 {
+	padding: 15px;
+}
+.buttonContainer_ecc1b2 {
+	margin-right: 41px;
+}
+.headerButtons_b9fccc {
+	margin-left: 390px;
+	margin-top: -90px;
+}
+
+[class^="userProfileModalInner"] .sizeSmall_dd4f85.button_f9d37d {
+	background: var(--green);
+	/* text-indent: -9999px; */
+}
+/*[lang^="en"] [class^="userProfileModalInner"] #text="Message" .sizeSmall_dd4f85.button_f9d37d:after {
+	content: "Send Message";
+	text-indent: 0px;
+}
+[lang="de"] [class^="userProfileModalInner"] .sizeSmall_dd4f85.button_f9d37d:after {
+	content: "Nachricht senden";
+	text-indent: 0px;
+}
+*/
+[class^="userProfileModalInner"] .sizeSmall_dd4f85.button_f9d37d:hover {
+	background: var(--green-active);
+}
+:is(.footer_b8cc6d) [aria-label="Edit Profile"] {
+	pointer-events: none;
+	color: var(--background-secondary) !important;
+	background: var(--background-secondary) !important;
+}
+:is(.footer_b8cc6d) [aria-label="Edit Profile"]::after {
+	content: "";
+	width: 115%;
+	height: 1px;
+	margin-top: 20px;
+	position: absolute;
+	background-color: rgba(32, 34, 37, 0.3) !important;
+}
+.sizeSmall_dd4f85.button_f9d37d > .buttonInner_f9d37d.contents_dd4f85 > svg {
+	display: none;
+}
+.bannerColor_f9d37d {
+	background: none !important;
+}
+
+[class^="userProfileModalInner"] .wrapper_cb78f1.fullSize_cb78f1 {
+	margin-top: 37px;
+	position: fixed;
+}
+ .banner_f9d37d.icon_f9d37d.buttonInner_f9d37d.contents_dd4f85  > svg:has([d="M4 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm10-2a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm8 0a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"]){
+	transform: rotate(90deg);
+}
+[class^="userProfileModalInner"] .statusBubble_d0a252 {
+	margin-top: 5px;
+	white-space: nowrap;
+}
+
+.section_ba4d80 .text-xs\/semibold_dc00ef {
+	text-transform: uppercase;
+}
+
+/*! profile modal ends here */
+
+/*profiles in settings page, its messy but it works lmao */
+.accountProfileCard_b69b77 > .userInfo_b69b77 {
 	margin-top: 10px;
 	margin-bottom: 30px;
 }
-.accountProfileCard-lbN7n- > .userInfo-regn9W > .wrapper-3Un6-K.avatar-3mTjvZ {
+.accountProfileCard_b69b77 > .userInfo_b69b77 > .wrapper_c51b4e.avatar_b69b77 {
 	position: absolute;
 	top: 15px;
 	background-color: var(--background-secondary);
 }
-div.profileCardUsernameRow-1bb6fi > div.userTag-2qPxEZ.nameTag-H6kSJ0 > span.discriminator-2m-MqL {
+div.profileCardUsernameRow_b69b77 > div.userTag_b69b77.nameTag_cd0810 > span.discriminator_b69b77 {
 	font-size: medium;
 	font-weight: 400;
 	position: relative;
 	top: 2px;
 }
-.accountProfileCard-lbN7n- > div.userInfo-regn9W > div:nth-child(2) > div.profileCardUsernameRow-1bb6fi {
+.accountProfileCard_b69b77 > div.userInfo_b69b77 > div:nth-child(2) > div.profileCardUsernameRow_b69b77 {
 	position: relative;
 	top: 5px;
 }
-.accountProfileCard-lbN7n- > .userInfo-regn9W > div:nth-child(2) > .badgeList-b3Ajmk.containerWithContent-2_V0PM.container-5SvbtF {
+.accountProfileCard_b69b77 > .userInfo_b69b77 > div:nth-child(2) > .badgeList_b69b77.containerWithContent_b64375.container_b64375 {
 	transform: scale(1.5);
 	position: relative;
-	left: 33px;
-	bottom: 5px;
+	left: 13px;
+	bottom: 3px;
 }
-.accountProfileCard-lbN7n- {
-	background-color: var(--background-secondary);
+.accountProfileCard_b69b77 {
+	background: var(--background-secondary);
 }
-.background-3d_SjE,
-.fieldList-in8WkP {
-	background-color: var(--background-primary);
+.background_b69b77,
+.fieldList_b69b77 {
+	background: var(--background-primary);
 }
-.avatarUploaderNormal-1h8g3f.avatarUploader-CHGwK7 {
-	position: absolute;
-	left: 33%;
+
+
+
+/*WIP*/
+
+/*
+.divider_e6f9ab {
+	background: var(--background-tertiary);
+	margin: 0;
+	padding: 5px;
 }
-.avatarUploaderNormal-1h8g3f.avatarUploader-CHGwK7 > .status-b9jLr4 {
+
+.customStatusEmoji__00639 {
+	margin-right: 8px !important;
+}*/
+
+/** user panel in dms*/
+/*LESS WIP then it was before! :D*/
+[class^="userPanel"] .userPanelInnerThemed_c69a7b {
+	background: var(--background-secondary);
+}
+
+[class^="userPanel"] .container_c32acf {
+	padding-top: 100px;
+	margin-top: -164px;
+}
+
+[class^="userPanel"] .container_b64375 {
 	display: none;
 }
-div.customizationSection-IGy2fS.previewProfileThemes-ViDDkq
-	> div.userPopoutOuter-3AVBmJ.userProfileOuter-1K_BYU.userProfileOuterUnthemed-2b2rsv.profileColors-3Y0XaR.theme-dark.default-colors.profileCustomizationPreviewWithoutTheme-2OWKhI.profileCustomizationPreview-2-Y173
-	> div
-	> div.userPopoutOverlayBackground-dKOOda.overlayBackground-1KgwVi.body-3wEtTO
-	> div:nth-child(1) {
-	margin-top: 90px;
+
+[class^="userPanel"] .statusBubbleOuter_d0a252 {
+	margin-top: -10px;
+	right: 65px;
 }
 
-.messageInputContainer-2rGDH8 {
-	border: none;
+[class^="userPanel"] .overlayBackground_c69a7b {
+	background: transparent;
 }
 
-/** Activity buttons*/
-/* spotify progress bar*/
-.bar-1GpknY {
-	background-color: var(--background-primary);
+[class^="userPanel"] .wrapper_c51b4e:not(.listAvatar_d2d6cb, .guildAvatar_c5a773) {
+	left: 15px;
 }
-/* make upgrade button blurple*/
-.button-35nmN9 {
-	background: none;
+
+[class^="userPanel"] .wrapper_cb78f1 {
+	margin-right: 20px;
 }
-/*general activity buttons*/
-.buttonColor-XIRMbp {
-	transition: 0.17s ease;
-	color: #fff !important;
-	opacity: 1 !important;
+
+[class^="userPanel"] .overflow_a82120 {
+	text-transform: uppercase;
 }
-.buttonColor-XIRMbp:hover {
-	background-color: var(--button-secondary-background-hover);
+[class^="userPanel"] .overflow_a82120 {
+	text-transform: uppercase;
+	font-size: 12px;
+	color: var(--header-secondary);
+	font-weight: 600;
+	font-family: var(--font-display);
 }
-/*dont make the text cut off*/
-.contents-3NembX {
-	overflow: visible !important;
+
+[class^="userPanel"] .button_c6eb7b {
+	background: var(--background-primary)
 }
+
+[class^="userPanel"] .contents_dd4f85 {
+	color: var(--text-primary)
+}
+
+[class^="userPanel"] .headings_ba4d80 {
+	color: var(--text-secondary) !important;
+	font-size: 12px;
+	color: var(--header-secondary);
+	font-weight: 600;
+	font-family: var(--font-display);
+}
+
+/* add scrollbar to user bio in profile sidebar (it's the exact same code except discord never changed the name of the class for this version of the bio) */
+.lineClamp2Plus_a595eb {
+	-webkit-line-clamp: 190 !important;
+	max-height: 112px;
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+.lineClamp2Plus_a595eb::-webkit-scrollbar-thumb {
+	background: transparent;
+	border-radius: 99px;
+}
+.lineClamp2Plus_a595eb::-webkit-scrollbar {
+	width: 4px;
+}
+.lineClamp2Plus_a595eb:hover::-webkit-scrollbar-track {
+	background: 0 0;
+	border-radius: 10px;
+}
+.lineClamp2Plus_a595eb:hover::-webkit-scrollbar-thumb {
+	background: var(--bg-overlay-6, var(--background-tertiary));
+	border-radius: 999px;
+}
+
+/* selector for status; unused because trying to position it fucking sucks
+[class^="userPanel"] .hover_f9d37d {
+	
+}
+also the mutual tabs WILL overlap it and I can't be bothered to figure out if it can push the note down instead
+tl;dr WIP */
+
+
+/** activities section in member list*/
+
+/*add a shadow and border like on profiles*/
+.popout_a35965{   
+    border-radius: 3px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px var(--deprecated-card-bg) !important;
+}
+/*thing in the member list*/
+.container_c64476{
+    background: var(--background-modifier-hover);
+    border-radius: 3px
+}
+/*game info*/
+.popoutContentWrapper_a35965{
+    background: var(--background-tertiary);
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.hero_a35965{
+    background: none !important;
+    padding: 0
+}
+.interactionsContainerHeader_a35965 /*weird line*/{
+    border: none
+}
+/*shitty dm box that has 0 reason to exist but the whole purpose of this theme is to not remove anything so im styling it*/
+.interactionsContainer_a35965{
+    background: var(--background-secondary);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.popout_a35965 .channelTextArea_d0696b{
+    background: var(--channeltextarea-background);
+    border-radius: 3px;
+    border: solid 1px var(--background-tertiary) !important;
+}
+
